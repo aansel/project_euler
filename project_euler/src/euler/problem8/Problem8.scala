@@ -20,6 +20,7 @@ object Problem8 {
   }
   
   // Calculer le meilleur produit de length caractères qui se suivent parmi une chaîne de caractère
+  // Peut mieux faire en évitant de reparcourir tous les caractères à chaque fois (substring)
   def getGreatestProduct(chaine: String, length: Int): Int = {
     (0 to chaine.length() - length).foldLeft(0)((bestProduct, i) => bestProduct max getProduct(chaine.substring(i, i + length)))
   }
