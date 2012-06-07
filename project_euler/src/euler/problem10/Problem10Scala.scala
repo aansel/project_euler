@@ -24,12 +24,12 @@ object Problem10Scala {
     def possiblePrimeStream(k: Int): Stream[Int] = {
       (6 * k - 1) #:: (6 * k + 1) #:: possiblePrimeStream(k + 1)
     }
-	2 #:: 3 #:: possiblePrimeStream(1)
+    2 #:: 3 #:: possiblePrimeStream(1)
   }
 
   // n est premier s'il n'est divisible par aucun premier de 1 à racine(n)
   def isPrime(n: Int): Boolean = {
-   	val limit = Math.sqrt(n)
+    val limit = Math.sqrt(n)
     val primeSream = possiblePrimeStream().dropWhile(divisor => divisor <= limit && n % divisor != 0)
     primeSream.first > limit
   }
