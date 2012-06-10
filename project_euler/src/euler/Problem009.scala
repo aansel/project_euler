@@ -1,6 +1,6 @@
 package euler
 
-object Problem9 {
+object Problem009 {
 
   def main(args: Array[String]): Unit = {
     

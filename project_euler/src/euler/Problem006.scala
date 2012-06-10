@@ -2,7 +2,7 @@ package euler
 
 import scala.math.pow
 
-object Problem6 {
+object Problem006 {
 
   def main(args: Array[String]): Unit = {
     

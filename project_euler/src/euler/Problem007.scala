@@ -1,7 +1,7 @@
 package euler
 import scala.collection.mutable.ListBuffer
 
-object Problem7 {
+object Problem007 {
   
   def main(args: Array[String]) {
      val t1 = System.currentTimeMillis()

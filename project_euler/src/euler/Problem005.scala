@@ -1,6 +1,6 @@
 package euler
 
-object Problem5 {
+object Problem005 {
 
   def main(args: Array[String]): Unit = {
     println(findDivisible(20))

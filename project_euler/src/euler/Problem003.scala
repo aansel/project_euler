@@ -1,6 +1,6 @@
 package euler
 
-object Problem3 {
+object Problem003 {
   
   def main(args: Array[String]) {
     println(getLargestPrimeFactorLong(600851475143L))    

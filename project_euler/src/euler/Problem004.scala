@@ -1,6 +1,6 @@
 package euler
 
-object Problem4 {
+object Problem004 {
 
   def main(args: Array[String]) {
 	  println(palindrom2(999));
