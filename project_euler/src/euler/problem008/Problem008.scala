@@ -1,7 +1,7 @@
-package euler.problem8
+package euler.problem008
 import scala.io.Source
 
-object Problem8 {
+object Problem008 {
   
   def main(args: Array[String]) {
     val t1 = System.currentTimeMillis()

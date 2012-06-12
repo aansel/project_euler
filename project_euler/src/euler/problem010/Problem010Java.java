@@ -1,6 +1,6 @@
-package euler.problem10;
+package euler.problem010;
 
-public class Problem10Java {
+public class Problem010Java {
 
 	
 	public static void main(String[] args) {

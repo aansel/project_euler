@@ -1,7 +1,7 @@
-package euler.problem10
+package euler.problem010
 
-object Problem10Scala {
-
+object Problem010Scala {
+  
   def main(args: Array[String]): Unit = {
     println("Scala version")
     val t1: Long = System.currentTimeMillis() 
@@ -14,7 +14,7 @@ object Problem10Scala {
   def sumPrimes(limit: Int): Long = {
     possiblePrimeStream()
       .takeWhile(_ <= limit)
-      .filter(isPrime(_))
+      .filter(isPrime(_))  
       .foldLeft(0L)(_ + _)
   }
   
@@ -28,9 +28,10 @@ object Problem10Scala {
   }
 
   // n est premier s'il n'est divisible par aucun premier de 1 à racine(n)
+  val possiblePrimes = possiblePrimeStream()
   def isPrime(n: Int): Boolean = {
     val limit = Math.sqrt(n)
-    val primeSream = possiblePrimeStream().dropWhile(divisor => divisor <= limit && n % divisor != 0)
+    val primeSream = possiblePrimes.dropWhile(divisor => divisor <= limit && n % divisor != 0)
     primeSream.first > limit
   }
 
