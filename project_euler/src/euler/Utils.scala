@@ -1,4 +1,5 @@
 package euler
+import scala.collection.mutable.ListBuffer
 
 object Utils {
   
@@ -33,4 +34,11 @@ object Utils {
     primeSream.first > limit
   }
 
+  def properDivisors(number: Int): List[Int] = {
+    val divisors = ListBuffer(1)    
+    (2 to number / 2).foreach(divisor => if (number % divisor == 0) {
+      divisors += divisor
+    })
+    divisors.toList
+  }
 }

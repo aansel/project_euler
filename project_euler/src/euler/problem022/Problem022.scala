@@ -15,6 +15,7 @@ object Problem022 extends App {
       .getLine(0).split(",").sortWith(_ < _)
       // Add index
       .view.zipWithIndex
+      // Iterate on all elements and calculate result
       .foldLeft(0L){(sum, element) => 
         element match {
           case (word, index) => {

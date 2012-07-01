@@ -8,7 +8,7 @@ public class Problem010Java {
 		long t1 = System.currentTimeMillis();
 		System.out.println(getSumPrimes(2000000));
 		long t2 = System.currentTimeMillis();
-		System.out.println((t2 - t1) + " ms");
+		System.out.println((t2 - t1) + " ms5");
 	}
 	
 	// Somme des nombres premiers de 1 à limit
