@@ -15,9 +15,7 @@ object Problem023 {
     (1 to limit).foreach{ number =>    
       // To check is a number can be written as the sum of abundant number, I substract a abundant number
       // from number and I check if the result is an abundant number
-      var ab = 0
       val remainingStream = abundantNumbersStream.dropWhile{ abundantNumber =>
-        ab = abundantNumber
         number - abundantNumber > 0 && !isAbundant(number - abundantNumber)
       }
 
